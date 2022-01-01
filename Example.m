@@ -1,6 +1,7 @@
 /*
   For each non-CM elliptic curve E over the rationals in Cremona's database, the following code computes a finite set of primes S 
-  such that if the mod ell representation rho_{E,ell} is not surjective with a prime ell>13, then ell is in the set S.  
+  such that if the mod ell representation rho_{E,ell} is not surjective with a prime ell>13, then ell is in the set S. 
+  It uses the function "ExceptionalSet" from the file SurjectivityOfGalois.m
   
   Cremona's database currently consists of elliptic curves of conductor at most 500000, and our code actually verifies 
   Conjecture 1.1 in the paper for all such non-CM curves.
