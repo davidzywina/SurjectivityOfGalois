@@ -6,10 +6,10 @@
   Conjecture 1.1 in the paper for all such non-CM curves.
  */
 
-	D:=CremonaDatabase();   
-  LargestConductor(D);
+D:=CremonaDatabase();   
+LargestConductor(D);
   
-	for N in [1..LargestConductor(D)] do
+for N in [1..LargestConductor(D)] do
 	for E in EllipticCurves(D,N) do
 		if HasComplexMultiplication(E) eq false then
         		S:={p: p in ExceptionalSet(E) | p gt 13};
@@ -22,5 +22,5 @@
 		        end if;
 		end if;
 	end for;
-	end for;
+end for;
   
