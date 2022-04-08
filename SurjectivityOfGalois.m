@@ -13,7 +13,7 @@ function ExceptionalSet(E)
     if den ne 1 then 
         ispow,b,e:=IsPower(den);                
         if ispow then                       	
-            g:=GCD([e] cat [p^2-1: p in Divisors(b)]);
+            g:=GCD([e] cat [p^2-1: p in PrimeDivisors(b)]);
             S:=S join {ell: ell in PrimeDivisors(g)};
         end if;
     else
